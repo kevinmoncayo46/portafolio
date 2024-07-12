@@ -1,0 +1,280 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --cor-de-seccion: #EAF2FD;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Header */
+.menu {
+    width: 100%;
+    padding: 32px 200px;
+    background: var(--cor-de-fundo);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    top: 0%;
+    position: fixed;
+    z-index: 1000;
+}
+
+#logoheader {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu__list__item_6{
+    font-weight: 700;
+}
+
+.menu__list__item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__list__item__contato a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section */
+.title {
+        width: 1136px;
+        margin-top: 110px;
+}
+
+.title__profile {
+    border-radius: 25%;
+    width: 320px;
+    height: 368px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.title__bio{
+    font-size: 52px;
+    font-weight: 700;
+}
+.title__subsection{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Section Styles */
+.about {
+    padding: 64px 180px;
+    background: var(--cor-de-seccion);
+    
+}
+
+/* About Section */
+.about__paragraph {
+    width: 750px;
+}
+
+/* Skills Section */
+
+.hobbies{
+    padding: 88px;
+}
+
+.skills__title, .hobbies__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* Academic Section */
+
+.academic__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Experience Section */
+
+
+.experience__section_title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.experience__img{
+    width: 752px;
+    flex-shrink: 0;
+    align-self: stretch;
+    max-width: 100%;
+    height: auto;
+}
+
+.experience__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+.experience__text{
+    font-size: 16;
+    font-weight: 500;
+}
+.experience__description{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.experience__botao--repo{
+    color: #2A7AE4;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #2A7AE4;
+    background-color: white;
+}
+
+.experience__botao--repo:hover{
+    cursor: pointer;
+}
+
+.experience__botao--demo{
+    color: white;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #2A7AE4;
+    background-color: #2A7AE4;
+}
+
+.experience__botao--demo:hover{
+    cursor: pointer;
+}
+.experience__box2{
+    display: flex;
+    width: 1136px;
+    height: 406px;
+    gap: 16px;
+    margin: 64px 0;
+    flex-direction: row-reverse;
+}
+.experience__box3{
+    display: flex;
+    width: 1136px;
+    height: 406px;
+    gap: 16px;
+    margin: 64px 0;
+    flex-direction: row-reverse;
+}
+/* Contact Section */
+
+.formcontato__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+.formcontato__subtext{
+    font-size: 16px;
+    font-weight: 500;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.formcontato__input{
+    display: flex;
+    width: 100%;
+    height: 56px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7px;
+    border-width: 0 0 1px 0;
+    border-radius: 4px;
+    border-color: #333;
+    background: white;
+    padding: 10px;
+}
+.formcontato__textarea{
+    display: flex;
+    width: 100%;
+    padding-top: 16px;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-self: stretch;
+    border-width: 0 0 1px 0;
+    border-radius: 4px;
+    border-color: #333;
+    background: white;
+}
+.formcontato__botao{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+    border-color: #2A7AE4;
+    background-color: #2A7AE4;
+}
+
+.formcontato__botao:hover{
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    width: 1440px;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer__rodape{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experiencie__box, .formcontato__contacto {
+        flex-direction: column;
+    }
+
+    .experience__img, .experience__info, .formcontato--esquerda, .formcontato__text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
